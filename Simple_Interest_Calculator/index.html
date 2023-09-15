@@ -14,18 +14,31 @@
             <span id="rate_val">
                 10.25
             </span> % <br/>
-            No. of Years <input type="number"  id="years">
-            <option>Option 1</option>  
-            <option>Option 2</option>
-            <option>Option 3</option>
-            <option>Option 4</option>
-            <option>Option 5</option>
-            <option>Option 6</option>
-            <br/>
-            Interest : <span id="result"></span><br>
+            No. of Years 
+            <input type="number"  id="years" list="all_years"> <!--connects input to datalist-->
+            <datalist id="all years">
+                <option value="1">Option 1</option>  
+                <option value="2">Option 2</option>  
+                <option value="3">Option 3</option>  
+                <option value="4">Option 4</option>  
+                <option value="5">Option 5</option>  
+                <option value="6">Option 6</option>  
+                <option value="7">Option 7</option>
+                <option value="8">Option 8</option>
+                <option value="9">Option 9</option>
+                <option value="10">Option 10</option>  
+                <br/>
+            </datalist>
+            Interest : <span id="result"></span><br/>
     
-            <button onclick="compute()">Compute</button>
+            <button onclick="compute()">Compute Interest</button>
+            <span id="result">
+
+            </span>
         </div>
+        <footer>
+            &#169; This Calculator belongs to M. Faisal Mahboob
+        </footer>
 
     </body>
 </html>
