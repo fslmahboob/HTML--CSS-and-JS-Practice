@@ -10,7 +10,7 @@
             <h1>Simple Interest Calculator</h1>
 
             Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25">
+            Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
             <span id="rate_val">
                 10.25
             </span> % <br/>
@@ -34,11 +34,11 @@
             <button onclick="compute()">Compute Interest</button>
             <span id="result">
 
-            </span>
+            </span><br>
         </div>
         <footer>
             &#169; This Calculator belongs to M. Faisal Mahboob
         </footer>
-
+        
     </body>
 </html>
